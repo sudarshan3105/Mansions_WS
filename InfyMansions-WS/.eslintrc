@@ -1,0 +1,35 @@
+{
+    "env": {
+		"es6":true,
+        "browser": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "only-arrow-functions": true,
+        "camelcase": "error",
+        "curly": [true, "ignore-same-line"],
+        "no-unused-variable": true,
+        "no-var-keyword": true,
+        "key-spacing": "error",
+        "keyword-spacing": [
+            "error",
+            {
+                "after": false,
+                "before": true
+            }
+        ],
+        "semi-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": false
+            }
+        ],
+        "space-before-function-paren": "error",
+        "space-in-parens": [
+            "error",
+            "always"
+        ]
+    }
+}

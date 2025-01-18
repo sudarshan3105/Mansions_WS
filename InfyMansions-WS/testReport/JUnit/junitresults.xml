@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="4" tests="7" time="0.017">
+ <testsuite name="validation " timestamp="2019-12-09T21:32:46" hostname="localhost" time="0.012" errors="0" tests="4" skipped="0" disabled="0" failures="1">
+  <testcase classname="validation " name="should validate the incoming emailId" time="0.002" />
+  <testcase classname="validation " name="should validate the incoming emailId" time="0" />
+  <testcase classname="validation " name="should validate the incoming password" time="0.002" />
+  <testcase classname="validation " name="should validate the incoming password" time="0.002">
+   <failure type="exception" message="Error: Password does not match"><![CDATA[error properties: Object({ status: 406 })
+Error: Password does not match
+    at Object.Validator.validatePassword (C:\Users\Sudarshan\Desktop\FA4\mansions\Mansions-WS\src\utilities\Validators.js:18:17)
+    at UserContext.<anonymous> (C:\Users\Sudarshan\Desktop\FA4\mansions\Mansions-WS\spec\test\validation.spec.js:11:26)
+    at <Jasmine>
+    at processImmediate (timers.js:632:19)
+    at process.topLevelDomainCallback (domain.js:120:23)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Testing ErrorLogger" timestamp="2019-12-09T21:32:46" hostname="localhost" time="0.005" errors="0" tests="3" skipped="0" disabled="0" failures="3">
+  <testcase classname="Testing ErrorLogger" name="Response should contain error message" time="0.001">
+   <failure type="toEqual" message="Expected undefined to equal &apos;ErrorLogger test&apos;."><![CDATA[Error: Expected undefined to equal 'ErrorLogger test'.
+    at <Jasmine>
+    at UserContext.it (C:\Users\Sudarshan\Desktop\FA4\mansions\Mansions-WS\spec\test\ErrorLogger.spec.js:48:34)
+    at <Jasmine>]]>
+   </failure>
+  </testcase>
+  <testcase classname="Testing ErrorLogger" name="Response status is set using Error status" time="0.001">
+   <failure type="toEqual" message="Expected Function to equal 404."><![CDATA[Error: Expected Function to equal 404.
+    at <Jasmine>
+    at UserContext.it (C:\Users\Sudarshan\Desktop\FA4\mansions\Mansions-WS\spec\test\ErrorLogger.spec.js:37:28)
+    at <Jasmine>]]>
+   </failure>
+  </testcase>
+  <testcase classname="Testing ErrorLogger" name="Response status set to 500 by default for Error" time="0.001">
+   <failure type="toEqual" message="Expected Function to equal 500."><![CDATA[Error: Expected Function to equal 500.
+    at <Jasmine>
+    at UserContext.it (C:\Users\Sudarshan\Desktop\FA4\mansions\Mansions-WS\spec\test\ErrorLogger.spec.js:25:28)
+    at <Jasmine>]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
